@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ImageDisplay from "./components/ImageDisplay";
-import ShareButton from "./components/ShareButton";
 
-const App = () => {
+const ImageDisplay = () => {
     const [imageUrl, setImageUrl] = useState("");
 
     useEffect(() => {
@@ -17,11 +15,14 @@ const App = () => {
     };
 
     return (
-        <div>
-            <ImageDisplay imageUrl={imageUrl} />
-            <ShareButton imageUrl={imageUrl} />
+        <div className="flex justify-center items-center h-screen">
+            {imageUrl ? (
+                <img src={imageUrl} alt="Random Image" className="w-64 h-64" />
+            ) : (
+                <p>Loading image...</p>
+            )}
         </div>
     );
 };
 
-export default App;
+export default ImageDisplay;
