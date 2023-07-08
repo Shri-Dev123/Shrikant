@@ -10,7 +10,7 @@ const ImageDisplay = () => {
     const fetchRandomImage = () => {
         // Implement your logic to fetch a random image from an API or use a library here
         // For demonstration purposes, we'll use a placeholder image URL
-        const randomImageUrl = "https://random.imagecdn.app/500/150";
+        const randomImageUrl = "https://picsum.photos/200/300";
         setImageUrl(randomImageUrl);
     };
 

@@ -18,11 +18,7 @@ const ShareButton = ({ imageUrl }) => {
                         Share on Facebook
                     </button>
                 </FacebookShareButton>
-                <TwitterShareButton
-                    url={imageUrl}
-                    hashtags={["randomImage"]}
-                    image={imageUrl}
-                >
+                <TwitterShareButton url={imageUrl} image={imageUrl}>
                     <button className="share-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mb-4 px-4 rounded">
                         Share on Twitter
                     </button>
